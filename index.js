@@ -11,7 +11,7 @@ const client = new Client({
 });
 
 // CONFIGURATION
-const TOKEN = 'MTUzNzE5NzI5MzIxNDYyOTk0OA.GS1dU2.0GzRgPSZDSSTIiUsQihfkbF932A2Sf5gOtw3OE';
+const TOKEN = process.env.TOKEN;
 const GUILD_ID = '1338167368941309982';
 const CHANNEL_ID = '1532533521745182985';
 
@@ -57,4 +57,4 @@ client.on('voiceStateUpdate', (oldState, newState) => {
     }
 });
 
-client.login('MTUzNzE5NzI5MzIxNDYyOTk0OA.GS1dU2.0GzRgPSZDSSTIiUsQihfkbF932A2Sf5gOtw3OE');
+client.login(TOKEN);]
